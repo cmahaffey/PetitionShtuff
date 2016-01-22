@@ -1,0 +1,56 @@
+// Place all the styles related to the Signatures controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  text-align: center;
+  background-color: whitesmoke;
+  font-family: 'Helvetica';
+  color:#111
+
+}
+article{
+  padding-left: 10vw;
+  height: 72vh;
+  overflow: scroll;
+}
+h5,
+td{
+  text-align: left;
+}
+p.underline{
+  text-decoration: underline;
+}
+p.indent{
+  text-indent: 5%
+}
+p{
+  width: 80vw;
+  text-align: justify;
+}
+form{
+  height: 10vh;
+  padding-top: 2vh;
+}
+
+.input{
+  width:63vw;
+  font-size: 20px;
+  margin-bottom: 7px
+}
+.submit{
+   padding: 5px 30px;
+   margin: 0px 8px 8px 0px;
+   border-radius: 10px;
+   background-color: whitesmoke;
+   font-size: 20px;
+}
+.submit:hover{
+  cursor: pointer;
+  border: 1px solid #999;color:#000;
+}
+
+ul,
+li{
+  text-align: left;
+}
