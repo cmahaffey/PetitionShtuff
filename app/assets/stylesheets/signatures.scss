@@ -14,9 +14,15 @@ article{
   height: 72vh;
   overflow: scroll;
 }
+h2{
+  margin: 0;
+  padding: 1.2vh;
+}
 h5,
 td{
+  vertical-align: top;
   text-align: left;
+
 }
 p.underline{
   text-decoration: underline;
@@ -32,12 +38,19 @@ form{
   height: 10vh;
   padding-top: 2vh;
 }
-
+.checkbox{
+  height:1.5em;
+}
+label{
+  margin-bottom: 3px;
+  width: 63vw;
+}
 .input{
   width:63vw;
   font-size: 20px;
   margin-bottom: 7px
 }
+
 .submit{
    padding: 5px 30px;
    margin: 0px 8px 8px 0px;

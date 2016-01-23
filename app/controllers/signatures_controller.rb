@@ -11,6 +11,7 @@ protect_from_forgery with: :null_session
 
     def create
       signatures=Signature.create(signature_params)
+      puts signature_params
       redirect_to "/"
     end
 
@@ -21,7 +22,7 @@ protect_from_forgery with: :null_session
     private
 
     def signature_params
-      params.require(:signature).permit(:name)
+      params.require(:signature).permit(:name,:confidentiality)
 
     end
 

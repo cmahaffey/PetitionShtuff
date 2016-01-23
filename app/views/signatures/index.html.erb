@@ -138,14 +138,22 @@ resolution.   Thank you for your consideration of our request.
     The members of St. Alban’s Parish listed below:
   </p>
   <p>
-    <%@signatures.each do |signature|%>
-      <%=signature.name%>
+    ● <%@signatures.each do |signature|%>
+      <%unless signature.confidentiality==true%>
+        <%=signature.name%> ●
+
+      <%end%>
     <%end%>
   </p>
 </article>
 
 
 <form class="" action="/signatures" method="post">
+  <label>
+    <input type="checkbox" name="signature[confidentiality]" value="true" class="checkbox">
+      If you would like your name kept from being visible, check here
+  </label><br>
   <input class="input" type="text" name="signature[name]" placeholder="Add your name"><br>
   <input class="submit"type="submit" value="Sign">
+
 </form>
