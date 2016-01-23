@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 20160123012732) do
 
   create_table "signatures", force: :cascade do |t|
     t.string   "name"
+    t.boolean  "confidentiality"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.boolean  "confidentiality"
   end
 
 end
