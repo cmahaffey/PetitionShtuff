@@ -2,6 +2,10 @@
   <%@signatures.each do |signature|%>
     <li>
       <%=signature.name%>
+      <form class="" action="/signatures/<%=signature.id%>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit">delete</button>
+      </form>
     </li>
   <%end%>
 </ul>

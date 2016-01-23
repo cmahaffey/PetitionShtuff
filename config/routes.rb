@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'signatures#index'
   post '/signatures'=>'signatures#create'
   get '/signatures'=>'signatures#show'
+  delete '/signatures/:id'=>'signatures#destroy'
   # get '/signatures'
 
   # Example of regular route:

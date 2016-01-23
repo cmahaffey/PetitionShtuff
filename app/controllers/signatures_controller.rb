@@ -19,6 +19,12 @@ protect_from_forgery with: :null_session
       @signatures=Signature.all
     end
 
+    def destroy
+      signature = Signature.find(params[:id])
+      signature.delete
+      redirect_to '/signatures'
+    end
+
     private
 
     def signature_params
