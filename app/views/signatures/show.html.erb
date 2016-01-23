@@ -1,7 +1,10 @@
+<%count=0%>
+<%confcount=0%>
 <ul>
   <%@signatures.each do |signature|%>
     <li>
-      <%=signature.name%>
+      <%count += 1%>
+      <%=signature.name%> <%if signature.confidentiality==true%><%confcount+=1%> Signed Confidentially <%end%>
       <form class="" action="/signatures/<%=signature.id%>" method="post">
         <input type="hidden" name="_method" value="delete">
         <button type="submit">delete</button>
@@ -9,3 +12,6 @@
     </li>
   <%end%>
 </ul>
+<p>
+  Total people: <%=count%>, Total confidential signers: <%=confcount%>
+</p>
