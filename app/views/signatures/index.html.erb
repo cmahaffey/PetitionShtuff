@@ -140,8 +140,9 @@ resolution.   Thank you for your consideration of our request.
   <p>
      <%@signatures.each do |signature|%>
       <%unless signature.confidentiality==true%>
+       <%unless signature.name==""%>
         <%=signature.name%> ●
-
+       <%end%>
       <%end%>
     <%end%>
   </p>
