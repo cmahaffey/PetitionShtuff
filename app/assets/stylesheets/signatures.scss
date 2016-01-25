@@ -14,10 +14,16 @@ article{
   height: 72vh;
   overflow: scroll;
 }
+
+h1,h3{
+  margin: 10px;
+}
+
 h2{
   margin: 0;
   padding: 1.2vh;
 }
+
 h5,
 td{
   vertical-align: top;
