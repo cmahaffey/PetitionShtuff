@@ -6,7 +6,6 @@ protect_from_forgery with: :null_session
     end
 
     def oldindex
-      @signatures=Signature.all
     end
 
     def new
