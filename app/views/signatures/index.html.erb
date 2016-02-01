@@ -1,6 +1,6 @@
-
+<a href="/petition">The Petition for Reconciliation</a>
 <h1> Letter to the Vestry</h1>
-<article class="petition">
+<article class="letter">
   <table>
     <tr>
       <td>
@@ -80,9 +80,6 @@
         <strong>Marty Welch</strong>
       </td>
     </tr>
-    <p>
-      With cc to the Bishop:
-    </p>
     <tr>
       <td>
         <strong>cc:</strong>
@@ -145,8 +142,11 @@ you will respond to these requests in a full and satisfactory manner.
   <p>
     Sincerly,
   </p>
+  <p>
+  <%count=0%>
   <%confcount=0%>
     <%@signatures.each do |signature|%>
+      <%count+=1%>
       <%unless signature.confidentiality==true%>
         <%letters=('A'..'z')%>
         <%letters.each do |check|%>
@@ -161,7 +161,9 @@ you will respond to these requests in a full and satisfactory manner.
     <%end%>
   </p>
   <p>
-  and <%=confcount%> people who chose to sign anonymously.
+  ● and <%=confcount%> people who chose to sign anonymously.
+  <br><br>
+  representing <%=count%> people in total
   </p>
   <span>
   <h4>2 Timothy 2:24 :</h4>

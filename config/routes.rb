@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'signatures#index'
-  get '/petition'=>'signatures#oldindex'
+  get '/petition'=>'signatures#oldIndex'
   post '/signatures'=>'signatures#create'
   get '/signatures'=>'signatures#show'
   delete '/signatures/:id'=>'signatures#destroy'
