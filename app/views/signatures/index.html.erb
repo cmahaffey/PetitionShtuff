@@ -1,4 +1,4 @@
-<a href="/petition">The Petition for Reconciliation</a>
+
 <h1> Letter to the Vesty</h1>
 <article class="petition">
   <table>
@@ -156,13 +156,18 @@ you will respond to these requests in a full and satisfactory manner.
             <%end%>
          <%end%>
       <%else%>
-        <%=confcount%>
+        <%confcount+=1%>
       <%end%>
     <%end%>
   </p>
-  <h4>2 Timothy 2:24 :</h4> <h6>“The Lord’s servants must not quarrel but must be kind to everyone.  They
-
-must be able to teach effectively and be patient with difficult people.”</h6>
+  <p>
+  and <%=confcount%> person who chose to sign anonymously.
+  </p>
+  <span>
+  <h4>2 Timothy 2:24 :</h4>
+  <h5>“The Lord’s servants must not quarrel but must be kind to everyone.  They
+      must be able to teach effectively and be patient with difficult people.”</h5>
+  </span>
 </article>
 
 <form class="" action="/signatures" method="post">

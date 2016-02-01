@@ -5,6 +5,10 @@ protect_from_forgery with: :null_session
       @signatures=Signature.all
     end
 
+    def oldindex
+      @signatures=Signature.all
+    end
+
     def new
       Signature.new
     end
